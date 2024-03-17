@@ -59,17 +59,28 @@
     white-space: nowrap;
     margin: 0;
     padding: 0;
-    animation: slideLeft 60s linear infinite;
+    animation: slideLeft 10s linear infinite;
 }
 
 
 
 @layer base {
-    body {
-        @apply  m-0 p-0 box-border w-full min-h-screen
+    html, body {
+        @apply  m-0 p-0 box-border w-full min-h-screen 
     }
 
     a {
       @apply cursor-pointer
+    }
+}
+
+@layer utilities {
+    .hero-title {
+      @apply font-sora text-[5.7rem] font-[600] tracking-wider leading-[90px] uppercase 
+                                     
+    }
+
+    .footer-title {
+      @apply font-sora text-[5rem] font-[600] tracking-wider leading-[90px] uppercase
     }
 }

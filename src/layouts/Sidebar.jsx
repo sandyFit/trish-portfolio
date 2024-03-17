@@ -6,7 +6,7 @@ const Sidebar = () => {
     const [activeSection, setActiveSection] = useState('Welcome')
 
     const handleScroll = () => {
-    const sections = ['hero', 'about', 'projects', 'contact'];
+    const sections = ['hero', 'about', 'projects', 'playground', 'contact'];
     const currentSection = sections.find(section => {
         const element = document.getElementById(section);
         if (element) {
@@ -27,8 +27,11 @@ const Sidebar = () => {
         case 'projects':
             setActiveSection('Selected Works');
             break;
+        case 'playground':
+            setActiveSection('Playground');
+            break;
         case 'contact':
-            setActiveSection('Get In Touch');
+            setActiveSection("Let's Talk");
             break;
         default:
             setActiveSection('Welcome');
@@ -45,8 +48,8 @@ const Sidebar = () => {
 
 
     return (
-        <section className='w-[80px] min-h-full flex flex-col justify-between items-center border-2
-            border-zinc-900 gap-60  fixed inset-0 z-30 bg-zinc-300'>
+        <section className='w-[80px] h-full flex flex-col justify-between items-center border-2
+            border-zinc-900 gap-60 fixed inset-0 z-30 bg-zinc-300'>
             <p className="text-zinc-300  text-[4rem] font-syne font-bold flex justify-center items-center w-full
                 h-[78px] border-b-2 border-zinc-900 bg-zinc-900">
                 T
@@ -56,7 +59,7 @@ const Sidebar = () => {
                 <p className='text-zinc-900 font-syne text-lg font-semibold uppercase -rotate-90'>{ activeSection }</p>
             </div>
 
-            <div className='flex flex-col justify-evenly items-center w-full h-full text-zinc-300 bg-zinc-900  gap-10'>
+            <div className='flex flex-col justify-evenly items-center w-full h-[20rem] text-zinc-300 bg-zinc-900 '>
                 <FaInstagram 
                     style={{ fontSize: '2rem',  cursor: 'pointer', transition: 'opacity 0.2s' }}
                     onMouseOver={(e) => e.target.style.opacity = 0.65}
