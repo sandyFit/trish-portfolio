@@ -10,7 +10,7 @@ const Hero = () => {
 
     return (
         <>
-            <section className='w-full min-h-screen bg-orangey-400 grid grids-col-2 relative'>
+            <section id='hero' className='w-full min-h-screen bg-orangey-400 grid grids-col-2 relative'>
                 <article className='absolute top-16 left-0 w-full'>
                     <MotionText
                         icon={<ImSmile style={{ margin: '3.6rem 4rem 0 0', fontSize: '5.8rem', color: '#d4d4d8'}} />}

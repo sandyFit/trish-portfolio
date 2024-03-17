@@ -81,6 +81,6 @@
     }
 
     .footer-title {
-      @apply font-sora text-[5rem] font-[600] tracking-wider leading-[90px] uppercase
+      @apply font-sora text-[5.7rem] font-[600] tracking-wider leading-[90px] uppercase
     }
 }

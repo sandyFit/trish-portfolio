@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { Link } from 'react-scroll';
 
 const Sidebar = () => {
 
@@ -19,19 +20,19 @@ const Sidebar = () => {
         
     switch (currentSection) {
         case 'hero':
-            setActiveSection('Welcome');
+            setActiveSection('Welcome 🖐');
             break;
         case 'about':
             setActiveSection('My Journey');
             break;
         case 'projects':
-            setActiveSection('Selected Works');
+            setActiveSection('selected works');
             break;
         case 'playground':
-            setActiveSection('Playground');
+            setActiveSection('my digital chaos');
             break;
         case 'contact':
-            setActiveSection("Let's Talk");
+            setActiveSection("drop me a line 😊");
             break;
         default:
             setActiveSection('Welcome');
@@ -49,17 +50,19 @@ const Sidebar = () => {
 
     return (
         <section className='w-[80px] h-full flex flex-col justify-between items-center border-2
-            border-zinc-900 gap-60 fixed inset-0 z-30 bg-zinc-300'>
-            <p className="text-zinc-300  text-[4rem] font-syne font-bold flex justify-center items-center w-full
-                h-[78px] border-b-2 border-zinc-900 bg-zinc-900">
-                T
+            border-zinc-900 gap-60 fixed inset-0 z-30 bg-zinc-300'>           
+            <p className="text-zinc-300 text-[4rem] font-syne font-bold flex justify-center items-center w-full h-[78px] border-b-2 border-zinc-900 bg-zinc-900">
+                <Link to="hero" className="w-full h-full flex justify-center items-center">T</Link>
             </p>
+            
+            <article className="flex justify-center" style={{ width: '200px' }}>
+                <p className='text-zinc-900 font-syne text-lg font-semibold uppercase -rotate-90 '>
+                    {activeSection}
+                </p>
+            </article>
 
-            <div className="flex">
-                <p className='text-zinc-900 font-syne text-lg font-semibold uppercase -rotate-90'>{ activeSection }</p>
-            </div>
-
-            <div className='flex flex-col justify-evenly items-center w-full h-[20rem] text-zinc-300 bg-zinc-900 '>
+            <article className='flex flex-col justify-evenly items-center w-full text-zinc-300 
+                 bg-zinc-900 border-t-2 border-zinc-300'>
                 <FaInstagram 
                     style={{ fontSize: '2rem',  cursor: 'pointer', transition: 'opacity 0.2s' }}
                     onMouseOver={(e) => e.target.style.opacity = 0.65}
@@ -76,7 +79,7 @@ const Sidebar = () => {
                     onMouseOut={(e) => e.target.style.opacity = 1}
                 /> 
                 
-            </div>
+            </article>
             
         </section>
     )
