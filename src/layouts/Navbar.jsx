@@ -5,7 +5,7 @@ const Navbar = () => {
     return (                      
         <nav className='flex justify-between items-center w-full h-[80px] fixed top-0 left-0 bg-zinc-300 z-20 
             border-t-2 border-b-2 border-zinc-900 hover:text-zinc-900 '>               
-            <p className='text-zinc-900 font-syne text-lg font-semibold hover:text-orangey-400 uppercase ml-28'>
+            <p className='text-zinc-900 font-syne text-lg font-semibold uppercase ml-28'>
                 trish ramos' portfolio
             </p>
             <div className="relative w-[47.5%]">

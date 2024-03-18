@@ -1,6 +1,8 @@
 import React from 'react';
+import { GoArrowDownRight } from "react-icons/go";
 import { FaCopyright, FaHeart } from 'react-icons/fa';
 import { ImSmile2 } from 'react-icons/im';
+import { hover } from '@testing-library/user-event/dist/hover';
 
 
 const Footer = () => {
@@ -10,8 +12,8 @@ const Footer = () => {
     return (
         <section id='contact' className='w-full h-[calc(100vh-77px)] bg-skyIce-300 border-2 border-t-0 border-zinc-900'>
 
-            <article  className='w-[calc(100vw - 90px)] h-[60px] grid grid-cols-3 border-b-2 bg-zinc-300
-                border-zinc-900 ml-[80px] text-center text-zinc-900 font-syne text-lg
+            <article className='w-[calc(100vw - 90px)] h-[60px] grid grid-cols-3 border-b-2 bg-zinc-300
+                border-zinc-900 ml-[78px] text-center text-zinc-900 font-syne text-lg
                 font-semibold uppercase'>
                 <p className='pt-4 border-r-2 border-zinc-900'>Web design</p>
                 <p className='pt-4 border-r-2 border-zinc-900'>Web development</p>
@@ -30,15 +32,30 @@ const Footer = () => {
                             <h2 className='footer-title text-zinc-900'>together!</h2>                   
                         </div>
 
-                        
+                        <div className="flex flex-col items-start">
+                            <p className='font-syne text-lg text-zinc-900 font-[500] uppercase'>
+                                Whether you have a question, want to work together, or just say hello, please drop me a line.
+                                <GoArrowDownRight style={{fontSize: '1.8rem', color: '#f4f4f8'}}/>
+                            </p>
 
-                    <div className="w-full flex font-normal uppercase text-zinc-900 pb-6
-                        tracking-wide">
-                        <FaCopyright style={{margin: '.25rem .5rem 0 0', fontSize: '1rem'}}/>
-                        {`${date.getFullYear()}. Trish ramos |   Crafted with`}
-                        <FaHeart style={{ color: 'red', margin: '5px 5px 0 5px', opacity: '.6' }} />
-                        {'by yours truly'}
-                    </div> 
+                            <p className='text-4xl pt-[3.5rem] text-center pb-4  mt-[-3rem]'>
+                                <a href="mailto:sandy07r@gmail.com"
+                                    className='text-zinc-900 hover:text-skyIce-100 hover:underline'
+                                >
+                                    hello<span className='text-skyIce-100'>@</span>trishramos.com
+                                </a>
+                            </p>
+
+            
+                        </div>
+
+                        <div className="w-full flex font-normal uppercase text-zinc-900 pb-2
+                            tracking-wide">
+                            <FaCopyright style={{margin: '.25rem .5rem 0 0', fontSize: '1rem'}}/>
+                            {`${date.getFullYear()}. Trish ramos |   Crafted with`}
+                            <FaHeart style={{ color: 'red', margin: '5px 8px 0 6px', opacity: '.6' }} />
+                            {'by yours truly'}
+                        </div> 
                     </div>
 
                     <div className="w-[47%] flex flex-col justify-between items-center p-20">
@@ -47,23 +64,9 @@ const Footer = () => {
                             
                         </div>
 
-                        <div className="flex flex-col ">
-                            <p className='font-syne text-xl text-zinc-900 font-[500] uppercase'>
-                                Whether you have a question, want to work together, or just say hello, please drop me a line.
-                            </p>
-
-                            <p className='text-4xl pt-[3.5rem] text-center pb-4 text-zinc-900'>
-                                <a href="mailto:sandy07r@gmail.com" >hello
-                                <span className='text-zinc-300'>@</span>
-                                trishramos.com</a>
-                            </p>            
-                        </div>
+                        
                     </div>
-                </div>
-
-               
-                   
-                    
+                </div>                
                 
             </article>
         </section>

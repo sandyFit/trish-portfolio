@@ -41,18 +41,17 @@ const Hero = () => {
                         </div>
                     </div> 
 
-                    <div className="w-[45%] flex justify-end items-end px-16 pb-16">
+                    <div className="w-[45%] flex justify-end items-end px-16 pb-20">
                         {/* Right Column Content */}
-                        <p className='w-full font-syne text-lg uppercase text-zinc-900 font-[500]'>                        
+                        <p className='w-full font-sora text-[1.141rem] text-zinc-900 font-[300]'>                        
                             Thanks for visiting.
                             I'm a frontend developer & web designer based in Colombia.<br/>
-                            I'm currently looking for full-time or freelance opportunities to challenge myself and
-                            collaborate on fun digital projects.<br/>
-                            Keen to enhance my portfolio.
+                            I'm currently looking for full-time or freelance opportunities to
+                            collaborate on fun digital projects, aiming to enhance my portfolio.
                             
-                            <Link to='contact' className=' hover:text-zinc-300 flex'>
-                                Feel free to drop me a line <CgArrowTopRight style={{fontSize: '1.5rem'}}/>
-                            </Link>
+                            <Link to='contact' className=' hover:text-zinc-300 inline-flex uppercase'>
+                                Feel free to drop me a line <CgArrowTopRight style={{fontSize: '1.141rem'}}/>
+                            </Link><br/>
                             Cheers :)
                         </p>
                     </div>

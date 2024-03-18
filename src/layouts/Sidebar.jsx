@@ -20,7 +20,7 @@ const Sidebar = () => {
         
     switch (currentSection) {
         case 'hero':
-            setActiveSection('Welcome 🖐');
+            setActiveSection('Welcome');
             break;
         case 'about':
             setActiveSection('Nice to meet you');
@@ -32,10 +32,10 @@ const Sidebar = () => {
             setActiveSection('my digital chaos');
             break;
         case 'contact':
-            setActiveSection("drop me a line 😊");
+            setActiveSection("drop me a line");
             break;
         default:
-            setActiveSection('Welcome');
+            setActiveSection('Welcome 🖐');
     }
 }
 
