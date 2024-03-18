@@ -1,58 +1,65 @@
-import React from 'react';
-import FeatureTitle from '../../components/features/FatureTitle';
-import FeatureCard from '../../components/features/FeatureCard';
-import FeatureParagraph from '../../components/features/FeatureParagraph';
-
+import React from 'react'
+import MotionTextSmall from '../../components/ui/MotionTextSmall';
+import { ImSmile } from 'react-icons/im';
 
 const About = () => {
-
-    const features = [
-        {
-            id: 'web-design',
-            title: 'Web Design',
-            description: 'I create captivating digital experiences that seamlessly blend aesthetics with functionality. \n\nWith meticulous attention to detail and a profound understanding of user experience, I create engaging websites that intuitively guide visitors through your content. \n\n My strategic approach focuses on setting specific goals to help each user take the expected action, ensuring a seamless journey that maximizes conversions.'
-        },
-        {
-            id: 'web-dev',
-            title: 'Web Development',
-            description: "I rely on power of JavaScript frameworks like React, and Vue.js to create dynamic and responsive interfaces. I do APIs, optimize websites with Webpack, and ensure cross-browser compatibility, assuring your web website is not just functional—it's a captivating experience that leaves a lasting impression."
-        },
-        {
-            id: 'motion',
-            title: 'Motion Design',
-            description: 'Motion design, encompassing everything from subtle animations to complex transitions, plays a pivotal role in enhancing user experience and guiding user actions. I recognize the significance of motion design and how it shapes the way users interact with websites.'
-
-        },
-
-        {
-            id: 'seo',
-            title: 'SEO',
-            description: 'I take a comprehensive and tailored approach to SEO. Analyzing your website, industry, competition, and target audience to develop a strategy that aligns with your business and marketing goals.'
-        }
-    ]
-
     return (
-        <section className='w-full min-h-screen px-24 flex gap-20'>
-            <article className="w-full flex items-start gap-32 py-[50vh]">
-                <ul className='w-full flex flex-col gap-60'>
-                    {features.map((item) => (
-                        <div key={item.id}>                           
-                            <FeatureTitle>{item.title}</FeatureTitle>
-                            <FeatureParagraph>{item.description}</FeatureParagraph>
-                        </div>
-                    ))}
-                </ul>
-
+        <>
+            <section id='about' className='w-full h-[calc(100vh-77px)] bg-skyIce-300 flex flex-col relative
+                border-2 border-zinc-900'>
                 
-            </article>
-            <article className="w-full sticky top-0 h-screen flex items-center">
-                <FeatureCard gradient='from-[#f7f0ff] to-[#a78afe]'/>
-            </article>
+                <article className='w-full h-[140px] bg-zinc-300 border-b-2 border-zinc-900 flex items-center'>
+                    <MotionTextSmall
+                        icon={<ImSmile style={{ margin: '1.2rem 2rem 0 2rem', fontSize: '3.5rem', color: '#7c5dec'}}/>}
+                        text={'about me'}
+                    />
+                </article>
 
-            
-            
-        </section>
-    )
-}
+                <article className="flex w-full h-full">
+                    <div className="w-[55%] h-full  flex flex-col border-r-2 border-zinc-900">
+                        
+                        <div className="flex items-center w-full h-[120px] py-6 border-b-2 border-zinc-900">
+                            <h2 className='hero-title text-zinc-300 ml-[12%]'>
+                                who i am
+                            </h2>
+                        </div>
+
+                        <div className="w-full flex justify-end items-end px-16 ">
+                            <p className="font-syne text-xl uppercase text-zinc-900 font-[500] ml-[8%] mt-20">
+                        
+                                Thanks for visisting. I'm a graphic designer based in Colombia. Feel free to call me Trish,
+                                just like my friends do. 😊.<br /><br />
+                                
+                                Driven by my passion for all things digital, I embarked on a self-taught journey to expand 
+                                my expertise into web development, directing my attention primarily towards frontend solutions.
+                                <br /><br />
+                                This journey has deepened my commitment to build digital products that are the perfect blend of
+                                meaningful aesthetics and function.<br/><br/>
+                                Away from the screen, I'm indulging in life's varied rhythms—be it striking a balance with gym
+                                sessions, mastering the craft of baking yum yums, or channeling my quirky side through drawing
+                                and lettering.<br /><br />                               
+                            </p>
+                        </div>
+                    </div>
+
+                    <div className="w-[45%] h-full flex flex-col">
+                       
+
+                        <div className="w-full h-[80%] flex justify-end items-end px-16 pb-16 mt-[20%]">
+                            <p className="font-syne text-xl uppercase text-zinc-900 font-[500]">                                                      
+
+                                I'm eager to collaborate with teams and clients who are passionate about exploring the intersection
+                                of mindful design and web technologies.
+                                
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+        </>
+    );
+};
 
 export default About;
+

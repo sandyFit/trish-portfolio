@@ -76,11 +76,11 @@
 
 @layer utilities {
     .hero-title {
-      @apply font-sora text-[5.7rem] font-[600] tracking-wider leading-[90px] uppercase 
+      @apply font-syne text-[4.3rem] font-[780] tracking-tighter leading-[70px] uppercase
                                      
     }
 
     .footer-title {
-      @apply font-sora text-[5.7rem] font-[600] tracking-wider leading-[90px] uppercase
+      @apply font-syne text-[4.3rem] font-[780] tracking-tighter leading-[70px] uppercase
     }
 }

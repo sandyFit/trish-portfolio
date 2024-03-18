@@ -1,64 +1,58 @@
-import React from 'react'
-import { PiCaretDoubleRightBold } from 'react-icons/pi';
-import { ImSmile } from "react-icons/im";
-import MotionText from '../../components/ui/MotionText';
-import { AnimatePresence, motion } from 'framer-motion';
-import {CgArrowTopRight } from "react-icons/cg";
-import { Link } from 'react-scroll';
+import React from 'react';
+import FeatureTitle from '../../components/features/FatureTitle';
+import FeatureCard from '../../components/features/FeatureCard';
+import FeatureParagraph from '../../components/features/FeatureParagraph';
 
-const Test = () => {
+
+const About = () => {
+
+    const features = [
+        {
+            id: 'web-design',
+            title: 'Web Design',
+            description: 'I create captivating digital experiences that seamlessly blend aesthetics with functionality. \n\nWith meticulous attention to detail and a profound understanding of user experience, I create engaging websites that intuitively guide visitors through your content. \n\n My strategic approach focuses on setting specific goals to help each user take the expected action, ensuring a seamless journey that maximizes conversions.'
+        },
+        {
+            id: 'web-dev',
+            title: 'Web Development',
+            description: "I rely on power of JavaScript frameworks like React, and Vue.js to create dynamic and responsive interfaces. I do APIs, optimize websites with Webpack, and ensure cross-browser compatibility, assuring your web website is not just functional—it's a captivating experience that leaves a lasting impression."
+        },
+        {
+            id: 'motion',
+            title: 'Motion Design',
+            description: 'Motion design, encompassing everything from subtle animations to complex transitions, plays a pivotal role in enhancing user experience and guiding user actions. I recognize the significance of motion design and how it shapes the way users interact with websites.'
+
+        },
+
+        {
+            id: 'seo',
+            title: 'SEO',
+            description: 'I take a comprehensive and tailored approach to SEO. Analyzing your website, industry, competition, and target audience to develop a strategy that aligns with your business and marketing goals.'
+        }
+    ]
+
     return (
-        <section className='w-[calc(100vw - 80px)] min-h-[calc[100vh - 80px]] bg-orangey-400 grid grids-col-2 border-2
-            border-zinc-900'>
-            <article className='w-1/2 h-full before:content-[""] absolute top-16'>
-                <MotionText
-                    icon={<ImSmile style={{ margin: '4rem 4rem 0 0', fontSize: '5rem'}} />}
-                    text1={'Creative Developer'}                   
-                />
-            </article>
-
-            <article className="flex w-full mt-[19.1rem] bg-transparent py-24">
-                <div className="w-[52%] flex flex-col items-start pl-40 border-r-2 border-zinc-900">
-                    {/* Left Column Content */}             
-                    <div className="flex flex-col">
-                        <div className="flex mb-3">
-                            <PiCaretDoubleRightBold style={{ margin: '6px 5px 0 0'}}/>
-                            <p className='w-full font-syne text-xl uppercase text-zinc-900 font-[500]'>
-                                Hello, Trish here
-                            </p>
+        <section className='w-full min-h-screen px-24 flex gap-20'>
+            <article className="w-full flex items-start gap-32 py-[50vh]">
+                <ul className='w-full flex flex-col gap-60'>
+                    {features.map((item) => (
+                        <div key={item.id}>                           
+                            <FeatureTitle>{item.title}</FeatureTitle>
+                            <FeatureParagraph>{item.description}</FeatureParagraph>
                         </div>
-                        <AnimatePresence>
-                            <motion.h1
-                                initial={{ opacity: 0, scale: 0.5 }}
-                                animate={{ opacity: 1, scale: 1 }}
-                                transition={{ duration: 5 }}
-                                className='font-sora text-[6rem] font-[600] tracking-wider leading-[90px] uppercase text-zinc-900 '>
-                                    I Turn   
-                                    <span className='text-zinc-300 ml-6'>Bold Ideas</span> 
-                                    <span className='mx-6'>into Digital</span>
-                                    <span className='text-zinc-300 flex flex-col'>Experiences</span>                                 
-                            </motion.h1>
-                        </AnimatePresence>                         
-                    </div>
-                </div>
+                    ))}
+                </ul>
 
                 
-                <div className="w-[48%] flex justify-end items-end px-16">
-                    {/* Right Column Content */}
-                    <p className='w-full font-syne text-xl uppercase text-zinc-900 font-[500]'>                        
-                        Thanks for visiting.
-                        I'm a frontend developer & web designer based in Colombia.
-                        I'm currently looking for opportunities to challenge myself within a creative agency or through
-                        freelance projects.
-                        <Link to='contact' className=' hover:text-zinc-300 flex'>
-                            Feel free to drop me a line <CgArrowTopRight style={{fontSize: '1.5rem'}}/>
-                        </Link>
-                        Cheers :)
-                    </p>
-                </div>
             </article>
+            <article className="w-full sticky top-0 h-screen flex items-center">
+                <FeatureCard gradient='from-[#f7f0ff] to-[#a78afe]'/>
+            </article>
+
+            
+            
         </section>
     )
 }
 
-export default Test
+export default About;

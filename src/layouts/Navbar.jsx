@@ -3,10 +3,12 @@ import { Link as ScrollLink } from 'react-scroll';
 
 const Navbar = () => {
     return (                      
-        <nav className='flex justify-end items-center w-full h-[80px] fixed top-0 left-0 bg-zinc-300 z-20 
+        <nav className='flex justify-between items-center w-full h-[80px] fixed top-0 left-0 bg-zinc-300 z-20 
             border-t-2 border-b-2 border-zinc-900 hover:text-zinc-900 '>               
-            
-            <div className="relative w-8/12">
+            <p className='text-zinc-900 font-syne text-lg font-semibold hover:text-orangey-400 uppercase ml-28'>
+                trish ramos' portfolio
+            </p>
+            <div className="relative w-[47.5%]">
                 <div className='flex justify-center items-center'>           
                     <ul className='w-full flex justify-between items-center bg-zinc-300'> 
                         {['about', 'services', 'projects', 'playground', 'cv'].map((item, index) => (
@@ -19,7 +21,7 @@ const Navbar = () => {
                         ))}
 
                         <li className='text-zinc-300 font-syne text-lg font-semibold bg-00 bg-zinc-900 
-                            hover:bg-orangey-400 hover:text-zinc-900 cursor-pointer px-16 py-6 uppercase
+                            hover:bg-skyIce-300 hover:text-zinc-900 cursor-pointer px-16 py-6 uppercase
                             border-r-2 border-l-2 border-zinc-900'>
                             <ScrollLink to='contact' smooth={true} duration={500}>
                                 Let's Talk

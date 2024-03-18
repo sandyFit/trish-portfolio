@@ -23,7 +23,7 @@ const Sidebar = () => {
             setActiveSection('Welcome 🖐');
             break;
         case 'about':
-            setActiveSection('My Journey');
+            setActiveSection('Nice to meet you');
             break;
         case 'projects':
             setActiveSection('selected works');
@@ -55,13 +55,13 @@ const Sidebar = () => {
                 <Link to="hero" className="w-full h-full flex justify-center items-center">T</Link>
             </p>
             
-            <article className="flex justify-center" style={{ width: '200px' }}>
+            <article className="flex justify-center" style={{ width: '300px' }}>
                 <p className='text-zinc-900 font-syne text-lg font-semibold uppercase -rotate-90 '>
                     {activeSection}
                 </p>
             </article>
 
-            <article className='flex flex-col justify-evenly items-center w-full text-zinc-300 
+            <article className='flex flex-col justify-evenly items-center w-full h-[19.8rem] text-zinc-300 
                  bg-zinc-900 border-t-2 border-zinc-300'>
                 <FaInstagram 
                     style={{ fontSize: '2rem',  cursor: 'pointer', transition: 'opacity 0.2s' }}
