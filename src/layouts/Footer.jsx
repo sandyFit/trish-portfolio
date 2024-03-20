@@ -39,9 +39,9 @@ const Footer = () => {
 
                             <p className='font-sora text-3xl pt-[3.5rem] text-center pb-4 mt-[-3.2rem]'>
                                 <a href="mailto:sandy07r@gmail.com"
-                                    className='text-zinc-900 hover:text-skyIce-100 hover:underline'
+                                    className='text-zinc-900 hover:text-zinc-300 hover:underline'
                                 >
-                                    hello<span className='text-skyIce-100'>@</span>trishramos.com
+                                    hello<span className='text-zinc-300'>@</span>trishramos.com
                                 </a>
                             </p>
 

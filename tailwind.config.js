@@ -66,7 +66,7 @@ export default {
         chivo: ["Chivo Mono", 'monospace'],
         magra: ["Pragati Narrow", 'sans-serif'],
         sora: ["Sora", 'sans-serif'],
-
+        ibm: ['IBM Plex Mono', 'monospace']
       },
 
       backgroundImage: {

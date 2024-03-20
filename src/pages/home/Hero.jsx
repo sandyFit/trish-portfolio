@@ -15,60 +15,54 @@ const Hero = () => {
                 
                 <article className='absolute top-[5rem] left-0 w-full'>
                     <MotionText
-                        icon={<ImSmile2 style={{ margin: '3rem 4rem 0 0', fontSize: '5.8rem', color: '#d4d4d8'}} />}
+                        icon={<ImSmile2 style={{ margin: '2rem 4rem 0 0', fontSize: '3.5rem', color: '#d4d4d8'}} />}
                         text1={'Creative Developer'}                   
                     />
                 </article>
 
-                <article className="flex w-[calc(100vw - 90px)] mt-[16.8rem] border-t-2 border-zinc-900">
-                    <div className="w-[52%] flex flex-col items-center border-r-2 pt-16 
-                        border-zinc-900">
+                <article className="flex flex-col justify-end  w-[calc(100vw - 90px)] border-t-2 border-zinc-900
+                    ml-[8rem] pb-10 relative">
+                    <div className="w-full flex flex-col items-center pb-4">
                         {/* Left Column Content */}
-                        <div className="flex flex-col pb-6 ml-8">
-                            <div className="flex mb-2">
-                                <PiCaretDoubleRightBold style={{ margin: '6px 5px 0 0'}}/>
-                                <p className='w-full font-sora text-xl text-zinc-900 font-[300] '>
-                                    Hello, Trish here
-                                </p>
+                        <div className="flex flex-col ">                           
+                            <div className="flex ">                              
+                                <div className="flex ">
+                                    <PiCaretDoubleRightBold style={{ margin: '6px 5px 0 0'}}/>
+                                    <p className='text-syne text-2xl font-[350] text-zinc-900 tracking-[.115rem] pb-4 ml-2'>   
+                                        Hello, Trish here
+                                    </p>
+                                </div>                                
                             </div>
-
-                            <h1 className='hero-title text-zinc-900 '>
-                                Turning  
-                            </h1>
-                            <h2 className='hero-title text-zinc-300'>Bold Ideas</h2> 
-                            <h2 className='hero-title'>into Digital</h2>
-                            <h2 className='hero-title text-zinc-300 flex flex-col'>Experiences</h2>                                                   
+                            
+                            <h1 className='w-full hero-title text-zinc-900 text-[8rem] '>
+                                    Turning  <br/>
+                                <span className='w-full hero-title text-zinc-300 text-[8rem] '>
+                                    Bold Ideas
+                                </span>                           
+                                <span className='w-full hero-title text-zinc-900 text-[8rem] ml-6'>
+                                    into Digital
+                                </span>
+                                
+                                <span className=' text-zinc-300 ml-2'>Experiences</span>  
+                            </h1>  
                         </div>
 
-                        <p className=' font-sora text-[1.141rem] text-zinc-900 font-[350] ml-16 px-20'>                        
-                            Thanks for visiting.
-                            I'm a frontend developer & web designer based in Colombia.<br/>
-                            I'm currently looking for full-time or freelance opportunities to
-                            collaborate on fun digital projects, aiming to enhance my portfolio.<br/>
-                            
-                            <Link to='contact' className=' hover:text-zinc-300 inline-flex underline'>
-                                Feel free to drop me a line
-                                <CgArrowTopRight style={{ fontSize: '1.5rem', fontWeight: '100', margin: '2px 0 0 -1px' }} />
-                            </Link><br/>
-                            Cheers :)
-                        </p>
                     </div> 
 
-                    <div className="w-[48%] flex justify-end items-end px-16 pb-20">
-                        {/* Right Column Content */}
-                        {/* <p className='w-full font-sora text-[1.141rem] text-zinc-900 font-[350]'>                        
-                            Thanks for visiting.
-                            I'm a frontend developer & web designer based in Colombia.<br/>
-                            I'm currently looking for full-time or freelance opportunities to
-                            collaborate on fun digital projects, aiming to enhance my portfolio.
-                            
-                            <Link to='contact' className=' hover:text-zinc-300 inline-flex uppercase'>
-                                Feel free to drop me a line <CgArrowTopRight style={{fontSize: '1.141rem'}}/>
-                            </Link><br/>
-                            Cheers :)
-                        </p> */}
-                    </div>
+                    
+                    <p className='text-syne text-2xl font-[350] text-zinc-900 tracking-[.115rem] pb-4 ml-2'>                       
+                        Frontend Developer & Web Designer based in Colombia.                       
+                        Seeking full-time or freelance opportunities in design and development.<br/>
+                       
+                        <Link to='contact' className=' hover:text-zinc-300 inline-flex'>
+                            Feel free to drop me a line
+                            <CgArrowTopRight style={{ fontSize: '1.5rem', fontWeight: '100', margin: '5px 0 0 -1px' }} />
+                        </Link><br/>
+                        Let's create! :)
+                    </p>
+                    
                 </article>
+                
             </section>
 
         </>
