@@ -23,16 +23,16 @@ const Sidebar = () => {
             setActiveSection('Welcome');
             break;
         case 'about':
-            setActiveSection('Nice to meet you');
+            setActiveSection('Nice to Meet You');
             break;
         case 'projects':
-            setActiveSection('selected works');
+            setActiveSection('Selected Works');
             break;
         case 'playground':
-            setActiveSection('my digital chaos');
+            setActiveSection('My Digital Chaos');
             break;
         case 'contact':
-            setActiveSection("drop me a line");
+            setActiveSection("Drop Me a Line");
             break;
         default:
             setActiveSection('Welcome 🖐');
@@ -56,7 +56,7 @@ const Sidebar = () => {
             </p>
             
             <article className="flex justify-center" style={{ width: '300px' }}>
-                <p className='text-zinc-900 font-syne text-lg font-semibold uppercase -rotate-90 '>
+                <p className='text-zinc-900 font-sora text-xl tracking-wide font-[400] -rotate-90 '>
                     {activeSection}
                 </p>
             </article>

@@ -59,9 +59,52 @@
     white-space: nowrap;
     margin: 0;
     padding: 0;
-    animation: slideLeft 10s linear infinite;
+    animation: slideLeft 20s linear infinite;
 }
 
+/* Example CSS */
+#about {
+  position: relative;
+  z-index: 1;
+}
+
+#what-i-do {
+  position: absolute;
+  top: 100%; /* Initially position it right below the About section */
+  left: 0;
+  width: 100%;
+  transition: top 0.3s ease-out; /* Smooth transition for the overlay effect */
+  z-index: 2; /* Ensure it overlays on top of the About section */
+}
+
+
+/* =========== PARALLLAX ============ */
+
+.parallax-container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  /*  this is where the magic happens:  */
+  background-attachment: fixed;
+
+}
+
+.buffer {
+  width: 100%;
+  min-height: 60vh;
+  background-color: var(--color);
+}
+
+.parallax-container2 {
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+
+/* ======================= */
 
 @layer base {
     html, body {
@@ -69,6 +112,7 @@
     }
 
     a {
+
       @apply cursor-pointer
     }
 }

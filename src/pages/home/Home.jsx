@@ -1,6 +1,8 @@
-import React from 'react'
-import Hero from './Hero'
-import About from './About'
+import React from 'react';
+import Hero from './Hero';
+import About from './About';
+import WhatIDo from './WhatIDo';
+
 
 const Home = () => {
     return (
@@ -11,6 +13,10 @@ const Home = () => {
             <section>
                 <About/>
             </section>
+            <section>
+                <WhatIDo/>
+            </section>
+
             
         </div>
     )
