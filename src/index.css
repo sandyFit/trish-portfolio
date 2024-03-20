@@ -78,32 +78,21 @@
 }
 
 
-/* =========== PARALLLAX ============ */
-
-.parallax-container {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  /*  this is where the magic happens:  */
-  background-attachment: fixed;
-
+/* =========== LINKS HOVER ============ */
+@keyframes flipText {
+  from {
+    transform: scaleY(-1);
+  }
+  to {
+    transform: scaleY(1);
+  }
 }
 
-.buffer {
-  width: 100%;
-  min-height: 60vh;
-  background-color: var(--color);
+
+.flipOnHover:hover {
+  box-shadow: inset 160px 0 0 0 #18181b;
+  color: white;
 }
-
-.parallax-container2 {
-  flex-direction: row;
-  flex-wrap: wrap;
-
-}
-
 /* ======================= */
 
 @layer base {

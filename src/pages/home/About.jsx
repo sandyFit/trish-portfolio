@@ -1,6 +1,7 @@
 import React, {useEffect} from 'react'
 import MotionTextSmall from '../../components/ui/MotionTextSmall';
 import { ImSmile } from 'react-icons/im';
+import FlippingTextBtn from '../../components/ui/FlippingTextBtn'
 
 const About = () => {
 
@@ -39,7 +40,7 @@ const About = () => {
 
             <article className="flex w-full h-full">
                 <div className="w-[52%] h-full  flex flex-col border-r-2 border-zinc-900">
-                                            
+                    <FlippingTextBtn/>                  
                 </div>
 
                 <div className="w-[48%] h-full flex flex-col ">                                               

@@ -13,8 +13,11 @@ const Navbar = () => {
                 <div className='flex justify-center items-center'>           
                     <ul className='w-full flex justify-between items-center bg-zinc-300'> 
                         {['about', 'services', 'projects', 'playground', 'cv'].map((item, index) => (
-                            <li className='text-zinc-900 font-syne text-lg font-semibold hover:text-skyIce-300
-                            cursor-pointer py-2 uppercase' key={index}>
+                            <li className='text-zinc-900 font-syne text-lg font-semibold hover:text-zinc-300 px-3 py-2 
+                                cursor-pointer rounded uppercase flipOnHover'
+                                key={index}
+                                style={{transition: 'color .3s ease-in-out, box-shadow .3s ease-in-out'}}
+                            >
                                 <ScrollLink to={item} smooth={true} duration={500} offset={item === 'about' ? -78 : 0}>
                                     {item.charAt(0).toUpperCase() + item.slice(1).replace('-', ' ')}
                                 </ScrollLink>
