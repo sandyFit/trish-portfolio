@@ -2,7 +2,7 @@ import React from 'react'
 
 const MotionText = ({ icon, text }) => {
     
-    const repetitions = Array(6).fill(null);
+    const repetitions = Array(7).fill(null);
 
     return (
         <div className="w-full z-10"
@@ -14,7 +14,7 @@ const MotionText = ({ icon, text }) => {
                         <span >
                             {icon}
                         </span>
-                        <span className='text-zinc-900' >{text}</span>
+                        <span className='text-zinc-900 mx-[100px]' >{text}</span>
                         </React.Fragment>
                     ))}
                 </div>

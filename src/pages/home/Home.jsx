@@ -1,7 +1,7 @@
 import React from 'react';
 import Hero from './Hero';
 import About from './About';
-import WhatIDo from './WhatIDo';
+//import WhatIDo from './WhatIDo';
 
 
 const Home = () => {
@@ -13,9 +13,9 @@ const Home = () => {
             <section>
                 <About/>
             </section>
-            <section>
+            {/* <section>
                 <WhatIDo/>
-            </section>
+            </section> */}
 
             
         </div>

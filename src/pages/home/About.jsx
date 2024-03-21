@@ -1,6 +1,8 @@
 import React from 'react'
 import MotionTextSmall from '../../components/ui/MotionTextSmall';
+import MotionTextXSmall from '../../components/ui/MotionTextXSmall';
 import { ImSmile } from 'react-icons/im';
+
 // import { ParallaxProvider } from 'react-scroll-parallax';
 
 
@@ -34,25 +36,31 @@ const About = () => {
             border-2 border-zinc-900'>
             <article className='w-full h-[150px] bg-zinc-300 border-b-2 border-zinc-900 flex items-center'>
                 <MotionTextSmall
-                    icon={<ImSmile style={{ margin: '1.2rem 2rem 0 2rem', fontSize: '3.5rem', color: '#7c5dec'}}/>}
+                    icon={' '}
                     text={'about me'}
                 />
             </article>
 
             <article className="flex w-full h-full">
                 <div className="w-[52%] h-full flex flex-col border-r-2 border-zinc-900">
-                   <div className="flex items-center w-full h-[120px] py-5 border-b-2 border-zinc-900">
-                        <h2 className='hero-title text-zinc-300 text-[4.5rem] pl-32'>
-                            i am ...
-                        </h2>
-                    </div>
+                   <div className="w-full flex-col justify-end items-end ml-12 px-24 pt-12">
+                        <div className="flex">
 
-                    <div className="w-full flex justify-end items-end pl-32 pr-16">
-                        <p className="font-sora text-[1.2rem] text-zinc-900 font-[350]  mt-12">                             
-                            A graphic designer at heart. Driven by my passion for all things digital, I embarked on a
-                            self-taught journey to expand my expertise into web development, with a keen focus on the artistry
-                            of frontend design.
-                            <br /><br />
+                            <span className='font-ibm text-[6.5rem] font-[600] relative bottom-8 mr-2 
+                                text-zinc-300'>
+                                    I
+                                </span>
+                            <div className="flex flex-col">
+
+                                <p className="text-syne text-2xl font-[380] text-zinc-900 tracking-[.115rem] ">      
+                                    am a graphic designer at heart. Driven by my passion for all things digital, I embarked on a
+                                    self-taught journey to expand my expertise into web development, with a keen 
+                                </p>
+                                <p className="text-syne text-2xl font-[380] text-zinc-900 tracking-[.115rem] ml-[-4.3rem]">
+                                    focus on the artistry of frontend design.</p>
+                            </div>
+                        </div>
+                        <p className="text-syne text-2xl font-[380] text-zinc-900 tracking-[.115rem] ">                             
                             Today, I stand as a creative developer, blending the worlds of design and code. <br /><br />
 
                             This journey has not only broadened my skill set but also solidified my commitment to
@@ -62,15 +70,22 @@ const About = () => {
                             stoke my passion for design and development.                            
                             <br /><br /> 
 
-                            Away from the screen, I'm indulging in life's varied rhythms—be it striking a balance with gym
-                            sessions, mastering the craft of baking yum yums, or channeling my quirky side through drawing
-                            and lettering.  
+                            Away from the screen, I'm indulging in life's varied rhythms—be it engaging in gym workouts,
+                            mastering the craft of baking yum yums, or channeling my quirky side through drawing.
                         </p>
-                    </div>
+                    </div>                   
                                    
                 </div>
 
-                <div className="w-[48%] h-full flex flex-col "> </div>                                    
+                <div className="w-[48%] h-full flex items-end">
+                    <div className="w-full bg-zinc-300 border-t-2 border-zinc-900">
+
+                        <MotionTextXSmall
+                        icon={'    '}
+                        text={'my skills'}
+                        />
+                    </div>
+                </div>                                    
                     
                 
             </article>

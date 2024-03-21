@@ -60,7 +60,7 @@
     white-space: nowrap;
     margin: 0;
     padding: 0;
-    animation: slideLeft 20s linear infinite;
+    animation: slideLeft 30s linear infinite;
 }
 
 /* Example CSS */
@@ -104,7 +104,7 @@
 
 @layer utilities {
     .hero-title {
-      @apply font-sora font-[600] tracking-wider leading-[120px] uppercase
+      @apply font-sora font-[700] tracking-wider leading-[120px] 
                                      
     }
 
