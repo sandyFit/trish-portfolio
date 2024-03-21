@@ -2,7 +2,7 @@ import React from 'react'
 
 const MotionText = ({ icon, text }) => {
     
-    const repetitions = Array(7).fill(null);
+    const repetitions = Array(8).fill(null);
 
     return (
         <div className="w-full z-10"

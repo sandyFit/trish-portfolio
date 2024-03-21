@@ -10,18 +10,18 @@ const Hero = () => {
 
     return (
         <>
-            <section id='hero' className='w-full min-h-screen bg-skyIce-300 grid grids-col-2 relative
+            <section id='hero' className='w-full min-h-screen  grid grids-col-2 relative bg-yellow-300
                 border-2 border-b-0 border-zinc-900'>
                 
                 <article className='absolute top-[4.9rem] left-0 w-full'>
                     <MotionText
-                        icon={<ImSmile style={{ margin: '2rem 4rem 0 0', fontSize: '3.5rem', color: '#7c5dec'}} />}
+                        icon={<ImSmile style={{ margin: '2rem 4rem 0 0', fontSize: '3.5rem', color: '#18181b'}} />}
                         text1={'Creative Developer'}                   
                     />
                 </article>
 
                 <article className="flex flex-col justify-end w-[calc(100vw - 90px)] border-t-2 border-zinc-900
-                    ml-[9rem] pb-10 relative">
+                    ml-[9rem] pb-10 relative ">
                     <div className="w-full flex flex-col items-center pb-4">
                         {/* Left Column Content */}
                         <div className="flex flex-col ">                           
@@ -35,22 +35,24 @@ const Hero = () => {
                             </div>
                             
                             <h1 className='w-full hero-title text-zinc-900 text-[7.6rem] uppercase'>
-                                    Turning  <br/>
-                                <span className='w-full hero-title text-zinc-300 text-[8rem] '>
+                                <span className='w-full font-sora text-zinc-900 text-[8rem] tracking-tight'>
+                                    Turning 
+                                </span> <br />
+                                <span className='w-full hero-title font-[950] tracking-widest text-zinc-900 text-[8rem] '>
                                     Bold Ideas
                                 </span>                           
-                                <span className='w-full hero-title text-zinc-900 text-[8rem] ml-6'>
+                                <span className='w-full font-sora text-zinc-900 text-[8rem] tracking-tight ml-7'>
                                     into Digital
                                 </span>
                                 
-                                <span className=' text-zinc-300 ml-2'>Experiences</span>  
+                                <span className=' text-zinc-900 ml-8 font-[950] tracking-widest'>Experiences</span>  
                             </h1>  
                         </div>
 
                     </div> 
 
                     
-                    <p className='text-syne text-2xl font-[380] text-zinc-900 tracking-wider pb-4 ml-2 mt-[-1rem]'>                       
+                    <p className='text-syne text-2xl font-[380] text-zinc-900 tracking-[.085rem] pb-4 ml-2 mt-[-1rem]'>                       
                         Frontend Developer & Web Designer based in Colombia.                       
                         Seeking full-time or freelance opportunities in design and development.<br/>
                        

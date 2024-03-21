@@ -1,7 +1,6 @@
 import React from 'react'
 import MotionTextSmall from '../../components/ui/MotionTextSmall';
 import MotionTextXSmall from '../../components/ui/MotionTextXSmall';
-import { ImSmile } from 'react-icons/im';
 
 // import { ParallaxProvider } from 'react-scroll-parallax';
 
@@ -32,7 +31,7 @@ const About = () => {
 
     return (
         
-        <section id='about' className='w-full h-[calc(100vh-78px)] bg-skyIce-300 flex flex-col sticky
+        <section id='about' className='w-full h-[calc(100vh-78px)] bg-pink-400 flex flex-col sticky
             border-2 border-zinc-900'>
             <article className='w-full h-[150px] bg-zinc-300 border-b-2 border-zinc-900 flex items-center'>
                 <MotionTextSmall
@@ -43,24 +42,25 @@ const About = () => {
 
             <article className="flex w-full h-full">
                 <div className="w-[52%] h-full flex flex-col border-r-2 border-zinc-900">
-                   <div className="w-full flex-col justify-end items-end ml-12 px-24 pt-12">
+                   <div className="w-full flex-col justify-end items-end ml-12 px-28 py-16">
                         <div className="flex">
 
-                            <span className='font-ibm text-[6.5rem] font-[600] relative bottom-8 mr-2 
-                                text-zinc-300'>
+                            <span className='font-ibm text-[6.2rem] font-[400] relative bottom-8 mr-2 
+                                text-zinc-900'>
                                     I
                                 </span>
                             <div className="flex flex-col">
 
-                                <p className="text-syne text-2xl font-[380] text-zinc-900 tracking-[.115rem] ">      
+                                <p className="font-ibm text-[1.2rem] font-[400] text-zinc-900  ">      
                                     am a graphic designer at heart. Driven by my passion for all things digital, I embarked on a
-                                    self-taught journey to expand my expertise into web development, with a keen 
+                                    self-taught journey to expand my expertise into web development, with a keen focus
                                 </p>
-                                <p className="text-syne text-2xl font-[380] text-zinc-900 tracking-[.115rem] ml-[-4.3rem]">
-                                    focus on the artistry of frontend design.</p>
+                                <p className="font-ibm text-[1.2rem] font-[400] text-zinc-900  ml-[-4.3rem]">
+                                    on the artistry of frontend design.
+                                </p>
                             </div>
                         </div>
-                        <p className="text-syne text-2xl font-[380] text-zinc-900 tracking-[.115rem] ">                             
+                        <p className="font-ibm text-[1.2rem] font-[400] text-zinc-900  ">                             
                             Today, I stand as a creative developer, blending the worlds of design and code. <br /><br />
 
                             This journey has not only broadened my skill set but also solidified my commitment to
