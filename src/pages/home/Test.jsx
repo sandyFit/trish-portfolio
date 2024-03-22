@@ -10,7 +10,7 @@ import MotionTextXSmall from '../../components/ui/MotionTextXSmall';
 const Test = () => {
   return (
          <>
-            <section id='hero' className='w-full min-h-screen grid grids-col-2 relative bg-pink-400
+            <section id='hero' className='w-full min-h-screen grid grids-col-2 relative bg-green-400
                 border-2 border-b-0 border-zinc-900'>
                 
                 <article className='absolute top-[4.9rem] left-0 w-full z-10'>
@@ -58,7 +58,7 @@ const Test = () => {
                  </div>                  
                 
 
-                  <div className="w-[48.5%] h-full flex flex-col items-center py-12 relative overflow-hidden">   
+                  <div className="w-[48.5%] h-full flex flex-col items-center py-12 relative">   
                       <div className="absolute w-[400px] h-[400px] rounded-full border-2 border-zinc-900 
                       top-[16.5rem]"></div>
                         
@@ -70,32 +70,40 @@ const Test = () => {
                               & customize the background
                                
                           </p>
-                          <div className="w-full flex gap-2 bg-zinc-300 py-4 border-t-2 justify-center items-center
+                          <div className="w-full flex gap-2 bg-transparent py-4 border-t-2 justify-center items-center
                             border-b-2 border-zinc-900">
                               
                             <button className="flex bg-red-400 w-24 h-10 rounded border-2 border-zinc-900 uppercase
-                                    font-syne justify-center items-center hover:bg-opacity-65">
+                                    font-syne justify-center items-center hover:bg-opacity-65 font-[500]">
                                         red
                                 </button>
                             <button className="flex bg-blue-400 w-24 h-10 rounded border-2 border-zinc-900 uppercase
-                                    font-syne justify-center items-center hover:bg-opacity-45">
+                                    font-syne justify-center items-center hover:bg-opacity-45 font-[500]">
                                         blue
                                 </button>
                             <button className="flex bg-yellow-300 w-24 h-10 rounded border-2 border-zinc-900 uppercase
-                                    font-syne justify-center items-center hover:bg-opacity-65">
+                                    font-syne justify-center items-center hover:bg-opacity-65 font-[500]">
                                         yellow
                                 </button>
                             <button className="flex bg-purple-400 w-24 h-10 rounded border-2 border-zinc-900 uppercase
-                                    font-syne justify-center items-center hover:bg-opacity-35">
+                                    font-syne justify-center items-center hover:bg-opacity-35 font-[500]">
                                         purple
                                 </button>
                             <button className="flex bg-green-400 w-24 h-10 rounded border-2 border-zinc-900 uppercase
-                                    font-syne justify-center items-center hover:bg-opacity-65">
+                                    font-syne justify-center items-center hover:bg-opacity-65 font-[500]">
                                         green
                                 </button>
                             <button className="flex bg-pink-400 w-24 h-10 rounded border-2 border-zinc-900 uppercase
-                                    font-syne justify-center items-center hover:bg-opacity-65">
+                                    font-syne justify-center items-center hover:bg-opacity-65 font-[500]">
                                         pink
+                                </button>
+                                <button className="flex bg-zinc-300 w-24 h-10 rounded border-2 border-zinc-900 uppercase
+                                        font-syne justify-center items-center hover:bg-opacity-65  font-[500]">
+                                            white
+                                    </button>
+                            <button className="flex bg-orange-400 w-24 h-10 rounded border-2 border-zinc-900 uppercase
+                                    font-syne justify-center items-center hover:bg-opacity-65 font-[500]">
+                                        orange
                                 </button>
                           </div>
                       </div>  

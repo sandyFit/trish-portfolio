@@ -10,7 +10,7 @@ const Footer = () => {
     const date = new Date();
 
     return (
-        <section id='contact' className='w-full h-[calc(100vh-77px)] bg-pink-400 border-2 border-t-0 border-zinc-900'>
+        <section id='contact' className='w-full h-[calc(100vh-77px)] bg-green-400 border-2 border-t-0 border-zinc-900'>
 
             <article className='w-[calc(100vw - 90px)] h-[60px] grid grid-cols-3 border-b-2 bg-zinc-300 cursor-pointer
                 border-zinc-900 ml-[78px] text-center text-zinc-900 font-sora text-[1.2rem] tracking-wide font-[400]'>

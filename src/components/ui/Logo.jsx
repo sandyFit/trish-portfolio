@@ -13,7 +13,7 @@ const Logo = ({ text }) => {
                         d="M110,60 A50,50 0 1,1 109,60" />
 
                 {/* Apply the text to the path with increased letter spacing */}
-                <text fontSize="10" fontWeight='400' fontFamily="IBM Plex Mono" style={{ letterSpacing: '2.7px', zIndex: '2'}}>
+                <text fontSize="10" fontWeight='500' fontFamily="IBM Plex Mono" style={{ letterSpacing: '2.7px', zIndex: '2'}}>
                     <textPath xlinkHref="#circlePath" startOffset="50%" textAnchor="middle" dominantBaseline="hanging">
                     {text}
                     </textPath>

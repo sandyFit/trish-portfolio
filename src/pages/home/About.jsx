@@ -31,7 +31,7 @@ const About = () => {
 
     return (
         
-        <section id='about' className='w-full h-[calc(100vh-78px)] bg-pink-400 flex flex-col sticky
+        <section id='about' className='w-full h-[calc(100vh-78px)] bg-green-400 flex flex-col sticky
             border-2 border-zinc-900'>
             <article className='w-full h-[150px] bg-zinc-300 border-b-2 border-zinc-900 flex items-center'>
                 <MotionTextSmall
